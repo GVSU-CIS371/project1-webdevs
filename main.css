@@ -1,14 +1,13 @@
-/* seeing if git push works for me */
 body,
 html {
   /* height:100%; */
-
   margin: 0px;
   padding: 0px;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 
-.app {
+#app {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr; 
   grid-template-rows: 60px 1fr 60px;
@@ -17,8 +16,6 @@ html {
     "main main main main"
     "footer footer footer footer"
   ;
-
-
 }
 
 header {
@@ -26,16 +23,22 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   background-color: orange;
+  padding: 10px;
+  font-family: 'garamond', serif;
 }
 
 nav li {
   display: inline-block;
+  margin: 10px;
+  text-decoration: none;
 }
 
-span {
+.store-item span {
   margin: 10px;
 }
+
 main {
   grid-area: main;
   display: grid;
@@ -49,8 +52,6 @@ main {
   border: 1px solid black;
   padding: 10px;
   text-align: center;
-  /* height: 75px;
-  width: 75px; */
 }
 
 .store-item img {
@@ -59,8 +60,9 @@ main {
   object-fit: cover;
 }
 
-
 footer {
   grid-area: footer;
   text-align: center;
+  font-size: .7em;
+
 }
