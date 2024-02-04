@@ -7,9 +7,10 @@ html {
   padding: 0px;
 }
 
+
 .app {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
   grid-template-rows: 60px 1fr 60px;
   grid-template-areas:            /*not sure if this is right*/
     "header header header header"
@@ -25,6 +26,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  background-color: orange;
 }
 
 nav li {
@@ -32,6 +34,25 @@ nav li {
 }
 main {
   grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
+  gap: 20px;
+  background-color: orange;
+  padding: 20px;
+}
+
+.store-item {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+  height: 75px;
+  width: 75px;
+}
+
+.store-item img {
+max-width: 50px;
+max-height: 50px;
+object-fit: cover;
 }
 
 
