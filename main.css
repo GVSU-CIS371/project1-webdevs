@@ -32,6 +32,10 @@ header {
 nav li {
   display: inline-block;
 }
+
+span {
+  margin: 10px;
+}
 main {
   grid-area: main;
   display: grid;
@@ -45,14 +49,14 @@ main {
   border: 1px solid black;
   padding: 10px;
   text-align: center;
-  height: 75px;
-  width: 75px;
+  /* height: 75px;
+  width: 75px; */
 }
 
 .store-item img {
-max-width: 50px;
-max-height: 50px;
-object-fit: cover;
+  max-width: 50px;
+  max-height: 50px;
+  object-fit: cover;
 }
 
 
